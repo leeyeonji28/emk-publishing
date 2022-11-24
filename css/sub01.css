@@ -1,0 +1,520 @@
+/*RESET*/
+* {
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Playfair Display", serif;
+  margin: 0 auto;
+}
+
+body {
+  overflow: hidden !important;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+.wrap {
+  width: 70vw;
+  height: 100vh;
+  margin: 0 15vw;
+}
+
+/*page reset*/
+#fullpage .page {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
+
+#fullpage .page .wrap .tit {
+  padding: 3vh 0 5vh 0;
+  position: relative;
+  height: 26vh;
+  box-sizing: border-box;
+}
+
+#fullpage .page .wrap .back_tit {
+  opacity: 0.1;
+  font-size: 18vh;
+  text-align: center;
+}
+
+#fullpage .page .wrap .front_tit {
+  font-size: 6vh;
+  position: absolute;
+  top: 17vh;
+  color: #bc9061;
+  text-shadow: 2px 0 5px #7c5f40, -2px 0 5px #7c5f40;
+}
+
+#fp-nav ul li a span {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*01*/
+.section01 {
+  background: url(../img/sub01/bg_01.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section01 div {
+  position: absolute;
+}
+
+.section01 div.year {
+  right: 1vw;
+  top: 1vh;
+}
+
+.section01 div.monte_tit {
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}
+
+.section01 div.monte_text {
+  left: 50vw;
+  top: 90vh;
+  transform: translate(-50%, -50%);
+}
+
+/*02*/
+.section02 {
+  background: url(../img/sub01/bg_02.png) no-repeat;
+  background-size: cover;
+}
+
+#fullpage .section02 .wrap .front_tit {
+  left: 50%;
+}
+.section02 .wrap {
+  position: relative;
+}
+.section02 .wrap > .frame {
+  width: 0vw;
+  height: 60vh;
+  position: absolute;
+  top: 26vh;
+  left: 50%;
+  box-sizing: border-box;
+}
+.section02 .wrap > .frame::before {
+  content: "";
+  width: 100%;
+  height: 9vh;
+  border-right: 1px solid #fff;
+  position: absolute;
+  top: 0;
+}
+.section02 .wrap > .frame::after {
+  content: "";
+  width: 100%;
+  height: 9vh;
+  border-right: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+}
+.section02 .wrap .slider {
+  position: relative;
+  height: 60vh;
+  padding: 12.5vh 0;
+  box-sizing: border-box;
+}
+.section02 .wrap .slick-list {
+  overflow: inherit;
+}
+.section02 .wrap .slick-track {
+  display: flex;
+  justify-content: center;
+}
+
+.section02 .wrap .slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.section02 .wrap .slick-active {
+  opacity: 0.5;
+  transform: scale(0.9);
+  margin: 0 -10vh;
+}
+
+.section02 .wrap .slick-current {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 100;
+  position: relative;
+  transition: all 0.5s;
+}
+.slick-current::before {
+  content: "";
+  width: 35vw;
+  height: 39vh;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+}
+.section02 .wrap .slick-current:hover {
+  transform: scale(1.2);
+}
+.section02 .wrap .slick-current:hover::before {
+  display: none;
+}
+.section02 .wrap .slick-current:hover .video_box img {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0;
+}
+.video_box {
+  width: 35vw;
+  height: 35vh;
+  position: relative;
+}
+.video_box img {
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.video_box iframe {
+  width: 35vw;
+  height: 35vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section02 .wrap .slider button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+  width: 1.5vw;
+  height: 3vh;
+  outline: none;
+  cursor: pointer;
+}
+
+.section02 .wrap .slider button.slick-prev {
+  left: calc(50% - 23vw);
+  background-image: url(../img/main/angel-left.png);
+  background-size: cover;
+}
+
+.section02 .wrap .slider button.slick-next {
+  left: calc(50% + 23vw);
+  background-image: url(../img/main/angel-right.png);
+  background-size: cover;
+}
+.section .wrap > a {
+  padding-top: 3vh;
+  display: block;
+  color: #fff;
+  font-size: 2.5vh;
+  text-align: center;
+  transition: all 0.8s;
+}
+.section .wrap > a:hover {
+  font-size: 3vh;
+}
+
+/*03*/
+.section03 {
+  background: url(../img/sub01/bg_03.png) no-repeat;
+  background-size: cover;
+}
+
+#fullpage .section03 .wrap .front_tit {
+  right: 50%;
+}
+
+.section03 .wrap {
+  position: relative;
+}
+.section03 .wrap > .frame {
+  width: 0vw;
+  height: 60vh;
+  position: absolute;
+  top: 26vh;
+  left: 50%;
+  /*border: 1px solid blue;*/
+  box-sizing: border-box;
+}
+.section03 .wrap > .frame::before {
+  content: "";
+  width: 100%;
+  height: 8vh;
+  border-right: 1px solid #fff;
+  position: absolute;
+  top: 0;
+}
+.section03 .wrap > .frame::after {
+  content: "";
+  width: 100%;
+  height: 8vh;
+  border-right: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+}
+.section03 .wrap .slider {
+  width: 100%;
+  height: 60vh;
+  /*background-color: #ccc;*/
+  position: relative;
+  padding: 11vh 0;
+}
+.section03 .wrap .slider .cast > p {
+  text-align: center;
+  font-size: 2.5vh;
+  height: 2.5vh;
+}
+.section03 .wrap .slider .cast > div {
+  width: 80%;
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-around;
+}
+.section03 .wrap .slider .cast > div > div > p {
+  text-align: center;
+  font-size: 2vh;
+  height: 2vh;
+}
+.section03 .wrap .slider .cast > div > div > img {
+  width: 12vw;
+  border-radius: 50%;
+  padding: 5vh 0 3vh 0;
+  transition: all 0.8s;
+}
+.section03 .wrap .slider .cast > div > div > img:hover {
+  transform: scale(1.1);
+}
+.section03 .wrap .slider button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+  width: 1.5vw;
+  height: 3vh;
+  outline: none;
+  cursor: pointer;
+}
+
+.section03 .wrap .slider button.slick-prev {
+  left: calc(50% - 28vw);
+  background-image: url(../img/main/angel-left.png);
+  background-size: cover;
+}
+
+.section03 .wrap .slider button.slick-next {
+  left: calc(50% + 28vw);
+  background-image: url(../img/main/angel-right.png);
+  background-size: cover;
+}
+
+/*04*/
+.section04 {
+  background: url(../img/sub01/bg_04.png) no-repeat;
+  background-size: cover;
+}
+
+#fullpage .section04 .wrap .front_tit {
+  left: 50%;
+}
+
+.section04 .wrap {
+  position: relative;
+}
+.section04 .wrap > .frame {
+  width: 0vw;
+  height: 60vh;
+  position: absolute;
+  top: 26vh;
+  left: 50%;
+  /*border: 1px solid blue;*/
+  box-sizing: border-box;
+}
+.section04 .wrap > .frame::before {
+  content: "";
+  width: 100%;
+  height: 10vh;
+  border-right: 1px solid #fff;
+  position: absolute;
+  top: 0;
+}
+.section04 .wrap > .frame::after {
+  content: "";
+  width: 100%;
+  height: 10vh;
+  border-right: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+}
+.section04 .wrap > .music {
+  width: 100%;
+  height: 60vh;
+  box-sizing: border-box;
+  display: flex;
+}
+.section04 .wrap > .music > .music_list {
+  width: 20vw;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.section04 .wrap > .music > .music_list > .music_btn > p {
+  display: block;
+  font-size: 2vh;
+  margin: 0 3vh 2vh 0;
+  cursor: pointer;
+}
+.section04 .wrap > .music > .music_list > .music_btn > .on {
+  font-weight: 900;
+  font-size: 3vh;
+}
+.section04 .wrap > .music > .music_list > div > ul > li > a {
+  color: #fff;
+  font-size: 1.6vh;
+  line-height: 1.6;
+}
+
+.section04 .wrap > .music > .lp {
+  width: 30vw;
+  height: 35vh;
+  padding: 12.5vh 0;
+  position: relative;
+}
+.section04 .wrap > .music > .lp > .circle {
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  transition: all 3s;
+}
+.section04 .wrap > .music > .lp > .circle01 {
+  border: 1px solid #fff;
+  width: 35vh;
+  height: 35vh;
+}
+.section04 .wrap > .music > .lp > .circle02 {
+  width: 32vh;
+  height: 32vh;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.section04 .wrap > .music > .lp > .circle03 {
+  width: 30vh;
+  height: 30vh;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.section04 .wrap > .music > .lp > .circle04 {
+  width: 25vh;
+  height: 25vh;
+  transform: translate(-50%, -50%) rotate(250deg);
+}
+.section04 .wrap > .music > .lp > .circle05 {
+  width: 22vh;
+  height: 22vh;
+  transform: translate(-50%, -50%) rotate(40deg);
+}
+.section04 .wrap > .music > .lp > .circle06 {
+  width: 10vh;
+  height: 10vh;
+  transform: translate(-50%, -50%) rotate(80deg);
+}
+.section04 .wrap > .music > .lp > .circle07 {
+  border: 1px solid #fff;
+  width: 8vh;
+  height: 8vh;
+}
+.section04 .wrap > .music > .music_site {
+  width: 20vw;
+  padding: 28.5vh 0;
+}
+.section04 .wrap > .music > .music_site > p {
+  font-size: 2.5vh;
+  height: 3vh;
+  line-height: 3vh;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+.section04 .wrap > .music > .music_site > p:hover {
+  transform: scale(1.1);
+}
+
+/*05*/
+.section05 {
+  background: url(../img/sub01/bg_05.png) no-repeat;
+  background-size: cover;
+}
+
+#fullpage .section05 .wrap .front_tit {
+  right: 50%;
+}
+
+.section05 .wrap {
+  position: relative;
+}
+
+.section05 .wrap > .frame {
+  width: 0vw;
+  height: 60vh;
+  position: absolute;
+  top: 26vh;
+  left: 50%;
+  box-sizing: border-box;
+}
+.section05 .wrap > .frame::before {
+  content: "";
+  width: 100%;
+  height: 10vh;
+  border-right: 1px solid #fff;
+  position: absolute;
+  top: 0;
+}
+.section05 .wrap > .frame::after {
+  content: "";
+  width: 100%;
+  height: 10vh;
+  border-right: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+}
+.section05 .wrap > .day_box {
+  width: 100%;
+  height: 60vh;
+  padding: 12.5vh 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.section05 .wrap > .day_box > .d_day > div {
+  width: 30vh;
+  height: 30vh;
+  line-height: 25vh;
+  border: 1px solid #fff;
+}
+.section05 .wrap > .day_box > .d_day > p {
+  padding-top: 2vh;
+}
